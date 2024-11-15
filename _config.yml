@@ -311,6 +311,9 @@ compress_html:
 
 
 # Defaults
+collections:
+  pages:
+    output: true
 defaults:
   # _posts
   - scope:
@@ -318,9 +321,13 @@ defaults:
       type: posts
     values:
       layout: single
-      permalink: /
       author_profile: true
       read_time: true
       comments: # true
       share: true
       related: true
+  - scope:
+      path: "_pages"      # 指定作用范围为 _pages 文件夹
+    values:
+      layout: page        # 设置默认布局为 page
+      permalink: /:title/ # 自动生成基于文件标题的 URL
