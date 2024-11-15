@@ -3,7 +3,7 @@ layout: home
 title: "Layout: Header Image and Text Readability"
 permalink: "/"
 header:
-  image: /assets/images/unsplash-image-4.jpg
+  image: /assets/images/test.png
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 tags: 
   - sample post
