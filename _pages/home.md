@@ -1,5 +1,7 @@
 ---
 layout: home
+related: false
+recent: false
 #title: "Layout: Header Image and Text Readability"
 permalink: "/"
 header:
