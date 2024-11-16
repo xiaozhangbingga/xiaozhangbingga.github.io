@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "张子湛"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/happy.png"
   bio              : "建筑历史与理论方向研究生，主要研究测绘、建筑文化遗产数字化、深度学习与文化遗产交叉学科等"
   location         : "北京"
   email            : # ""
