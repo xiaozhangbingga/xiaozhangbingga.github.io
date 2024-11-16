@@ -14,9 +14,31 @@ author_profile: true
 
 ## 教育背景
   * ### 北京建筑大学, Beijing University of Civil Engineering and Architecture
-      #### 工学学士, 土木与交通工程学院, 土木工程(建筑工程)
+    工学学士, 土木与交通工程学院, 土木工程 (建筑工程)
+    Aug.2018-June.2022
   * ### 河北建筑工程学院, Hebei University of Architecture
-      #### 建筑学硕士, 建筑与艺术学院, 建筑学(建筑历史与理论)
+    建筑学硕士, 建筑与艺术学院, 建筑学 (建筑历史与理论)
+    Aug.2022-Present
+
+## 项目经历
+  * ### 延庆长城砖窑数字化保护与虚拟展示项目 (Aug 2022-Present)
+    - 项目概述: 2021年3月, 于延庆岔道城-小张家口村段长城附近发现长城砖窑遗址群, 受延庆区文物管理所的委托,
+开展研究以及展示工作.
+    - 主要工作: 田野调查, 无人机航拍, 多媒体设计, 研究报告撰写.
+  * ### 河北省古塔数字化测绘项目 (Aug 2022-Aug 2024)
+    - 项目概述: 对河北省范围内的古塔进行数字化测绘, 对古塔的信息进行记录, 整理成册出版.
+    - 主要工作: 测绘, 无人机航拍, 点云数据处理.
+  * ### 2022年乡村建设评估· 阳原县评估工作 (Oct 2022-Nov 2022)
+    - 项目概述: 依据住房和城乡建设部相关通知, 从发展水平,农房建设,村庄建设,县城建设等方面对阳原县的建设
+水平进行分析评价.
+    - 主要工作: 访谈, 无人机航拍, 数据分析, 研究报告撰写
+  * ### 大运河镇江段新河街六处文物建筑结构鉴定项目 (Aug 2023-Oct 2023)
+    - 项目概述: 针对大运河镇江段新河街一条街项目中涉及复杂工况的六处文物建筑进行补充性结构鉴定.
+    - 主要工作: 测绘, 点云数据处理, 数据可视化, 结构鉴定
+  * ### 镇江丹阳六朝墓葬数字化保护项目 (Nov 2023-Dec 2023)
+    - 项目概述: 丹阳市考古前置工作勘探发现六朝时期的墓葬群, 使用数字化测绘技术对墓葬进行记录与建档, 为遗址迁
+移工作提供资料
+    - 主要工作: 测绘, 无人机航拍, 点云数据处理
 
 This is a sample post with a large feature image[^1] up top and tons of text. Odio ad blue bottle vinyl, 90's narwhal commodo bitters pour-over nostrud. Ugh est hashtag in, fingerstache adipisicing laboris esse Pinterest shabby chic Portland. Shoreditch bicycle rights anim, flexitarian laboris put a bird on it vinyl cupidatat narwhal. Hashtag artisan skateboard, flannel Bushwick nesciunt salvia aute fixie do plaid post-ironic dolor McSweeney's. Cliche pour-over chambray nulla four loko skateboard sapiente hashtag.
 
