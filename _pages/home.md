@@ -1,5 +1,6 @@
 ---
 layout: home
+list_title: ""
 #title: "Layout: Header Image and Text Readability"
 permalink: "/"
 header:
