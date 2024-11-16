@@ -1,5 +1,5 @@
 ---
-#layout: home
+layout: home
 #title: "Layout: Header Image and Text Readability"
 permalink: "/"
 header:
