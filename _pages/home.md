@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "Layout: Header Image and Text Readability"
+#title: "Layout: Header Image and Text Readability"
 permalink: "/"
 header:
   image: /assets/images/test.png
@@ -11,6 +11,12 @@ tags:
   - test
 author_profile: true
 ---
+
+## 教育背景
+  * ### 北京建筑大学, Beijing University of Civil Engineering and Architecture
+      #### 工学学士, 土木与交通工程学院, 土木工程(建筑工程)
+  * ### 河北建筑工程学院, Hebei University of Architecture
+      #### 建筑学硕士, 建筑与艺术学院, 建筑学(建筑历史与理论)
 
 This is a sample post with a large feature image[^1] up top and tons of text. Odio ad blue bottle vinyl, 90's narwhal commodo bitters pour-over nostrud. Ugh est hashtag in, fingerstache adipisicing laboris esse Pinterest shabby chic Portland. Shoreditch bicycle rights anim, flexitarian laboris put a bird on it vinyl cupidatat narwhal. Hashtag artisan skateboard, flannel Bushwick nesciunt salvia aute fixie do plaid post-ironic dolor McSweeney's. Cliche pour-over chambray nulla four loko skateboard sapiente hashtag.
 
