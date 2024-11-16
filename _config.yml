@@ -324,8 +324,8 @@ defaults:
       author_profile: true
       read_time: true
       comments: # true
-      share: # true
-      related: # true
+      share: true
+      related: true
   - scope:
       path: "_pages"      # 指定作用范围为 _pages 文件夹
     values:
