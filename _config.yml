@@ -127,7 +127,7 @@ author:
       url: "tel:15601027781"
     - label: "WeChat"
       icon: "fab fa-fw fa-weixin"  # 使用微信的图标
-      url: "xiaozhangbingga.github.io/assets/images/wechat_QRcode.jpg"  # 这里是你的二维码链接，或者可以使用微信号的直接展示
+      url: "https://xiaozhangbingga.github.io/assets/images/wechat_QRcode.jpg"  # 这里是你的二维码链接，或者可以使用微信号的直接展示
     #- label: "Website"
       #icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
