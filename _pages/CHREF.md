@@ -18,10 +18,10 @@ The field of cultural heritage has developed over a long period, accumulating a 
 ### **KEYWORDS**:
 Cultural heritage, Machine learning, Interdisciplinary Research, Embedding, One-hot encoding, Principal component analysis, Hierarchical clustering analysis, Traditional Chinese Kilns
 
-
-![Graphical Abstract](/assets/images/CHREF/hca_dendrogram.png)
-#### Graphical Abstract
-
+{% figure %}
+![Graphical Abstract](/assets/images/CHREF/Graphical Abstract.jpg)
+Graphical Abstract
+{% endfigure %}
 
 # **自动识别文化遗产系统关系的框架**
 [张子湛](/), 周梓骏, 曹迎春
