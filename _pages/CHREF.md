@@ -31,46 +31,26 @@ Cultural heritage, Machine learning, Interdisciplinary Research, Embedding, One-
 
 
 
+论文受到了机器学习和生物学领域研究方法的启发, 提出一个研究思路 (简称“FSM + N”). 这个研究思路就是使用独热编码来记录文化遗产中的无序的离散的类型数据, 我们编写了一个 FSM 模块来完成这个功能, 经过模块处理后的数据可以有意义的记录研究对象形态特征的差异, 模块可以和不同的算法组合实现不同的研究目标. 本篇论文提供了一个 CHREF 框架实现聚类分析, 选择 PCA 和 HCA 两种解释度很高的算法与 FSM 搭建框架. 
 
-When using `layout: single` add the following front matter to a page or post to widen the main content:
+![Type2Vec](/assets/images/CHREF/type2vec.jpg)
+*离散的信息都被投影到高维空间, 不同类型之间的距离值是相同的. 针对某些样本缺失的特征, 也做了处理(其实就是检测到 0 值就给类型值都加一哈哈哈), 保证有无特征的距离值与不同形态类型的距离值一致.*
 
-```yaml
-classes: wide
-```
+解决了数据处理的问题就可以开始构建框架了, 我们选择了 PCA 做降维和可视化 HCA 做聚类分析. 我们还测试了 t-SNE, UMAP, DBSCAN, AP 这些算法, 性能相比 PCA 和 HCA 有少量的提升, 但超参数多了许多, 操作难度提升了许多, 这不利与框架的自动化. 
 
-Portland in shoreditch Vice, labore typewriter pariatur hoodie fap sartorial Austin. Pinterest literally occupy Schlitz forage. Odio ad blue bottle vinyl, 90's narwhal commodo bitters pour-over nostrud. Ugh est hashtag in, fingerstache adipisicing laboris esse Pinterest shabby chic Portland. Shoreditch bicycle rights anim, flexitarian laboris put a bird on it vinyl cupidatat narwhal. Hashtag artisan skateboard, flannel Bushwick nesciunt salvia aute fixie do plaid post-ironic dolor McSweeney's. Cliche pour-over chambray nulla four loko skateboard sapiente hashtag.
+![MainFramework](/assets/images/CHREF/main_framework.jpg)
+*框架的思路就是使用 FSM 处理数据, 使用 PCA 的 SVD 方法做降维和可视化, 最后使用 HCA 对降维后的数据做聚类分析, 整个框架的输出结果是一些图表, 可视化效果好.*
 
-Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater ullamco quinoa ennui assumenda, sapiente occupy delectus lo-fi. Ea fashion axe Marfa cillum aliquip. Retro Bushwick keytar cliche. Before they sold out sustainable gastropub Marfa readymade, ethical Williamsburg skateboard brunch qui consectetur gentrify semiotics. Mustache cillum irony, fingerstache magna pour-over keffiyeh tousled selfies.
+本论文提供了一个关于中国砖瓦窑的实验, 用来验证我们提出的框架. 我们从考古报告中收集了 55 座信息较为完备的砖窑作为样本, 选取了砖窑的 28 个特征点作为样本信息. 砖窑的年代从先商到明代, 根据考古学的观点有许多的分类方法, 我们更多的关注形态对砖窑系统关系的影响与基于形态的砖窑系统关系.
 
-## Cupidatat 90's lo-fi authentic try-hard
+![PCAImportance](assets/images/CHREF/pca_importance.jpg)
+*使用 $loadings = \textbf{V}\textbf{\Sigma}$ 计算每个特征点在每个主成分上的荷载值, 高荷载值代表该特征在该主成分上的影响较大(方差大). 根据图表可以看到比较重要的特征点是 19(排烟系统类型), 1(砖窑的构筑方式), 6(火塘的竖直位置), 7(火塘的水平位置), 8(火塘大小).*
 
-In pug Portland incididunt mlkshk put a bird on it vinyl quinoa. Terry Richardson shabby chic +1, scenester Tonx excepteur tempor fugiat voluptate fingerstache aliquip nisi next level. Farm-to-table hashtag Truffaut, Odd Future ex meggings gentrify single-origin coffee try-hard 90's.
+![PCAPeriod](assets/images/CHREF/pca_period.jpg)
+*这张图是第一主成分和第二主成分的散点图, 按照朝代标注了散点的颜色. 我们使用高斯分布拟合了每个朝代的密度极值点, 按照朝代发展相连. 可以看出砖窑发展中每次大变化发生在哪一个主成分的维度, 结合特征荷载可以看到变化是基于何种特征点的发展.*
 
-  * Sartorial hoodie
-  * Labore viral forage
-  * Tote bag selvage
-  * DIY exercitation et id ugh tumblr church-key
+![HCADendrogram](assets/images/CHREF/hca_dendrogram.jpg)
+*PCA 降维后我的取用前 20 个主成分维度的数据, 解释度 90.625%, 凝聚后获得了树状图. 设置阈值为 6, 获得了 8 个支系, 结果与年代散点图和特征荷载图表现的砖窑发展特征高度相符.*
 
-Incididunt umami sriracha, ethical fugiat VHS ex assumenda yr irure direct trade. Marfa Truffaut bicycle rights, kitsch placeat Etsy kogi asymmetrical. Beard locavore flexitarian, kitsch photo booth hoodie plaid ethical readymade leggings yr.
-
-Aesthetic odio dolore, meggings disrupt qui readymade stumptown brunch Terry Richardson pour-over gluten-free. Banksy american apparel in selfies, biodiesel flexitarian organic meh wolf quinoa gentrify banjo kogi. Readymade tofu ex, scenester dolor umami fingerstache occaecat fashion axe Carles jean shorts minim. Keffiyeh fashion axe nisi Godard mlkshk dolore. Lomo you probably haven't heard of them eu non, Odd Future Truffaut pug keytar meggings McSweeney's Pinterest cred. Etsy literally aute esse, eu bicycle rights qui meggings fanny pack. Gentrify leggings pug flannel duis.
-
-## Forage occaecat cardigan qui
-
-Fashion axe hella gastropub lo-fi kogi 90's aliquip +1 veniam delectus tousled. Cred sriracha locavore gastropub kale chips, iPhone mollit sartorial. Anim dolore 8-bit, pork belly dolor photo booth aute flannel small batch. Dolor disrupt ennui, tattooed whatever salvia Banksy sartorial roof party selfies raw denim sint meh pour-over. Ennui eu cardigan sint, gentrify iPhone cornhole.
-
-> Whatever velit occaecat quis deserunt gastropub, leggings elit tousled roof party 3 wolf moon kogi pug blue bottle ea. Fashion axe shabby chic Austin quinoa pickled laborum bitters next level, disrupt deep v accusamus non fingerstache.
-
-Tote bag asymmetrical elit sunt. Occaecat authentic Marfa, hella McSweeney's next level irure veniam master cleanse. Sed hoodie letterpress artisan wolf leggings, 3 wolf moon commodo ullamco. Anim occupy ea labore Terry Richardson. Tofu ex master cleanse in whatever pitchfork banh mi, occupy fugiat fanny pack Austin authentic. Magna fugiat 3 wolf moon, labore McSweeney's sustainable vero consectetur. Gluten-free disrupt enim, aesthetic fugiat jean shorts trust fund keffiyeh magna try-hard.
-
-## Hoodie Duis
-
-Actually salvia consectetur, hoodie duis lomo YOLO sunt sriracha. Aute pop-up brunch farm-to-table odio, salvia irure occaecat. Sriracha small batch literally skateboard. Echo Park nihil hoodie, aliquip forage artisan laboris. Trust fund reprehenderit nulla locavore. Stumptown raw denim kitsch, keffiyeh nulla twee dreamcatcher fanny pack ullamco 90's pop-up est culpa farm-to-table. Selfies 8-bit do pug odio.
-
-### Thundercats Ho!
-
-Fingerstache thundercats Williamsburg, deep v scenester Banksy ennui vinyl selfies mollit biodiesel duis odio pop-up. Banksy 3 wolf moon try-hard, sapiente enim stumptown deep v ad letterpress. Squid beard brunch, exercitation raw denim yr sint direct trade. Raw denim narwhal id, flannel DIY McSweeney's seitan. Letterpress artisan bespoke accusamus, meggings laboris consequat Truffaut qui in seitan. Sustainable cornhole Schlitz, twee Cosby sweater banh mi deep v forage letterpress flannel whatever keffiyeh. Sartorial cred irure, semiotics ethical sed blue bottle nihil letterpress.
-
-Occupy et selvage squid, pug brunch blog nesciunt hashtag mumblecore skateboard yr kogi. Ugh small batch swag four loko. Fap post-ironic qui tote bag farm-to-table american apparel scenester keffiyeh vero, swag non pour-over gentrify authentic pitchfork. Schlitz scenester lo-fi voluptate, tote bag irony bicycle rights pariatur vero Vice freegan wayfarers exercitation nisi shoreditch. Chambray tofu vero sed. Street art swag literally leggings, Cosby sweater mixtape PBR lomo Banksy non in pitchfork ennui McSweeney's selfies. Odd Future Banksy non authentic.
-
-Aliquip enim artisan dolor post-ironic. Pug tote bag Marfa, deserunt pour-over Portland wolf eu odio intelligentsia american apparel ugh ea. Sunt viral et, 3 wolf moon gastropub pug id. Id fashion axe est typewriter, mlkshk Portland art party aute brunch. Sint pork belly Cosby sweater, deep v mumblecore kitsch american apparel. Try-hard direct trade tumblr sint skateboard. Adipisicing bitters excepteur biodiesel, pickled gastropub aute veniam.
+---
+到这论文的主要内容就讲完了, 我们的技术能力有限, 只是想分享一个生产数据的方式和分析的基本思路. 论文还有详细的内容, 可以点击链接查看. 最后, 希望文化遗产领域的开源数据可以越来越多, 哈哈哈.
