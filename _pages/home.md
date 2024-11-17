@@ -43,7 +43,7 @@ author_profile: true
     - 主要工作: 测绘, 无人机航拍, 点云数据处理
    
 ## 学术成果
-  * An Automatic Framework Recognizing the Relationships of Cultural Heritage. **IEEE Access**. 2024. (中科院三区, JCR Q2, **IF=3.4**, 第一作者)
+  * An Automatic Framework Recognizing the Relationships of Cultural Heritage. **IEEE Access**. 2024. (中科院三区, JCR Q2, **IF=3.4**, 第一作者). [**论文个人发布页**](xiaozhangbingga.github.io/CHREF/)
   * [A Deep Learning-based Method of Investigating Rammed-earth Wall Damage on the Ming Great Wall Military Defense System](https://dl.acm.org/doi/10.1145/3701739). **Journal on Computing and Cultural Heritage**. 2024. (中科院三区, JCR Q3, **IF=2.1**)
   * 延庆长城砖窑发现与营建过程复原. **河北建筑工程学院学报**(在投状态: 等待责编处理). 2024. (第一作者)
   * 中国古塔数字化测绘图集·河北卷. **中国建筑工业出版社**. 2024.
