@@ -43,13 +43,13 @@ Cultural heritage, Machine learning, Interdisciplinary Research, Embedding, One-
 
 本论文提供了一个关于中国砖瓦窑的实验, 用来验证我们提出的框架. 我们从考古报告中收集了 55 座信息较为完备的砖窑作为样本, 选取了砖窑的 28 个特征点作为样本信息. 砖窑的年代从先商到明代, 根据考古学的观点有许多的分类方法, 我们更多的关注形态对砖窑系统关系的影响与基于形态的砖窑系统关系.
 
-![PCAImportance](assets/images/CHREF/pca_importance.jpg)
-*使用 $loadings = \textbf{V}\textbf{\Sigma}$ 计算每个特征点在每个主成分上的荷载值, 高荷载值代表该特征在该主成分上的影响较大(方差大). 根据图表可以看到比较重要的特征点是 19(排烟系统类型), 1(砖窑的构筑方式), 6(火塘的竖直位置), 7(火塘的水平位置), 8(火塘大小).*
+![PCAImportance](/assets/images/CHREF/pca_importance.jpg)
+*使用右奇异向量矩阵与奇异值矩阵计算每个特征点在每个主成分上的荷载值, 高荷载值代表该特征在该主成分上的影响较大(方差大). 根据图表可以看到比较重要的特征点是 19(排烟系统类型), 1(砖窑的构筑方式), 6(火塘的竖直位置), 7(火塘的水平位置), 8(火塘大小).*
 
-![PCAPeriod](assets/images/CHREF/pca_period.jpg)
+![PCAPeriod](/assets/images/CHREF/pca_period.jpg)
 *这张图是第一主成分和第二主成分的散点图, 按照朝代标注了散点的颜色. 我们使用高斯分布拟合了每个朝代的密度极值点, 按照朝代发展相连. 可以看出砖窑发展中每次大变化发生在哪一个主成分的维度, 结合特征荷载可以看到变化是基于何种特征点的发展.*
 
-![HCADendrogram](assets/images/CHREF/hca_dendrogram.jpg)
+![HCADendrogram](/assets/images/CHREF/hca_dendrogram.jpg)
 *PCA 降维后我的取用前 20 个主成分维度的数据, 解释度 90.625%, 凝聚后获得了树状图. 设置阈值为 6, 获得了 8 个支系, 结果与年代散点图和特征荷载图表现的砖窑发展特征高度相符.*
 
 ---
