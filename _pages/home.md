@@ -5,7 +5,7 @@ recent: false
 #title: "Layout: Header Image and Text Readability"
 permalink: "/"
 header:
-  image: /assets/images/test.png
+  image: /assets/images/erguai.jpg
   caption: "我的鹦鹉, 它叫二乖子"
 tags: 
   - sample post
