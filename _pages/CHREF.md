@@ -19,6 +19,10 @@ The field of cultural heritage has developed over a long period, accumulating a 
 Cultural heritage, Machine learning, Interdisciplinary Research, Embedding, One-hot encoding, Principal component analysis, Hierarchical clustering analysis, Traditional Chinese Kilns
 
 
+![Graphical Abstract](/assets/images/CHREF/Graphical Abstract.pdf)
+#### Graphical Abstract
+
+
 # **自动识别文化遗产系统关系的框架**
 [张子湛](/), 周梓骏, 曹迎春
 
@@ -26,6 +30,9 @@ Cultural heritage, Machine learning, Interdisciplinary Research, Embedding, One-
 文化遗产领域经过漫长的发展, 积累了丰富的研究成果. 当前, 研究者开始聚焦于遗产的系统性关系与分类研究, 探索其中蕴含的深层文化信息. 受机器学习和生物学领域的启发, 我们提出了一种结合数据处理与无监督算法的研究方法 (“FSM + N”) , 旨在揭示文化遗产研究对象的系统性关系. 我们构建了一个文化遗产关系评估框架 (Cultural Heritage Relationship Evaluation Framework, 简称 CHREF) , 其结构基于“FSM + PCA + HCA”, 并提供了具有可解释性,可视化能力和自动化特点的工作流程. 该框架通过 FSM 模块将研究对象转化为矩阵, 并利用 PCA 和 HCA 获取直观图表和可靠的数据结果, 同时将人工干预降至最低. 此外, 我们以中国传统砖窑为例, 进行实验和用户研究, 以验证所提框架的有效性与普适性. “FSM + N”方法论与 CHREF 框架可为文化遗产研究中的各个阶段提供工具, 对文化遗产的数字化发展及数据库建设具有重要贡献.
 ### **关键词**:
 文化遗产, 机器学习, 交叉学科, 嵌入, 独热编码, 主成分分析, 层次聚类分析, 中国传统砖瓦窑
+
+
+
 
 When using `layout: single` add the following front matter to a page or post to widen the main content:
 
