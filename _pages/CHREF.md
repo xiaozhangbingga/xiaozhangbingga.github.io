@@ -19,7 +19,7 @@ The field of cultural heritage has developed over a long period, accumulating a 
 Cultural heritage, Machine learning, Interdisciplinary Research, Embedding, One-hot encoding, Principal component analysis, Hierarchical clustering analysis, Traditional Chinese Kilns
 
 
-![Graphical Abstract](/assets/images/CHREF/Graphical Abstract.pdf)
+![Graphical Abstract](/assets/images/CHREF/hca_dendrogram.png)
 #### Graphical Abstract
 
 
