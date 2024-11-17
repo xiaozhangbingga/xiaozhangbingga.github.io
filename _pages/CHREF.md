@@ -1,13 +1,13 @@
 ---
 layout: single
+permalink: /CHREF/
 # title: "Wide Single Layout Page"
 classes: wide
 # excerpt: "A page with `classes: wide` set to expand the main content's width."
-tags: 
-  - sample post
-  - readability
-  - test
-permalink: /CHREF/
+# tags: 
+#  - sample post
+#  - readability
+#  - test
 ---
 
 # **An Automatic Framework Recognizing the Relationships of Cultural Heritage**
