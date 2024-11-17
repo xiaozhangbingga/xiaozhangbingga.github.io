@@ -2,7 +2,7 @@
 layout: home
 related: false
 recent: false
-#title: "Layout: Header Image and Text Readability"
+title: ""
 permalink: "/"
 header:
   image: /assets/images/erguai.jpg
