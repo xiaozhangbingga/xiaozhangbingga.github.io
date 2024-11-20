@@ -12,6 +12,7 @@ classes: wide
 
 # **An Automatic Framework Recognizing the Relationships of Cultural Heritage**
 [https://doi.org/10.1109/ACCESS.2024.3500584](https://doi.org/10.1109/ACCESS.2024.3500584)
+
 [Zizhan Zhang](/), Zijun Zhou, Yingchun Cao
 
 ### **ABSTRACT**: 
