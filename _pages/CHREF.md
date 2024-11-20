@@ -11,6 +11,7 @@ classes: wide
 ---
 
 # **An Automatic Framework Recognizing the Relationships of Cultural Heritage**
+[https://doi.org/10.1109/ACCESS.2024.3500584](https://doi.org/10.1109/ACCESS.2024.3500584)
 [Zizhan Zhang](/), Zijun Zhou, Yingchun Cao
 
 ### **ABSTRACT**: 
@@ -53,4 +54,4 @@ Cultural heritage, Machine learning, Interdisciplinary Research, Embedding, One-
 *PCA 降维后我的取用前 20 个主成分维度的数据, 解释度 90.625%, 凝聚后获得了树状图. 设置阈值为 6, 获得了 8 个支系, 结果与年代散点图和特征荷载图表现的砖窑发展特征高度相符.*
 
 ---
-到这论文的主要内容就讲完了, 我们的技术能力有限, 只是想分享一个生产数据的方式和分析的基本思路. 论文还有详细的内容, 可以点击链接查看. 最后, 希望文化遗产领域的开源数据可以越来越多, 哈哈哈.
+到这论文的主要内容就讲完了, 我们的技术能力有限, 只是想分享一个生产数据的方式和分析的基本思路. 论文还有详细的内容, 可以点击[这里](https://doi.org/10.1109/ACCESS.2024.3500584)查看. 最后, 希望文化遗产领域的开源数据可以越来越多, 哈哈哈.
