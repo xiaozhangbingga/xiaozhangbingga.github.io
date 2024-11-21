@@ -73,5 +73,6 @@ author_profile: true
 ---
 ### 联系方式
 * 邮箱: zhangxiaozhan0727@gmail.com
+* EDU邮箱: 201802020420@stu.bucea.edu.cn
 * 联系电话: 15601027781
 *(电脑端没有配置默认应用可能导致左侧联系方式无法正常跳转, 将联系方式附在此处)*
