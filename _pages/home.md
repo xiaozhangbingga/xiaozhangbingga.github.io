@@ -16,7 +16,7 @@ author_profile: true
 
 ## 学术成果
   * [An Automatic Framework Recognizing the Relationships of Cultural Heritage](https://doi.org/10.1109/ACCESS.2024.3500584). **IEEE Access**. 2024. (中科院三区, JCR Q2, **IF=3.4**, 第一作者). [**论文个人发布页**](/CHREF/)
-  * [Dunhuang_Faces: A Dataset Enhanced through Image Processing for Cultural Heritage and Machine Learning](https://doi.org/10.18280/ts.420148). **Traitement du Signal**. 2025.(中科院四区, JCR Q4, **IF=1.2**, 第一作者)
+  * [Dunhuang_Faces: A Dataset Enhanced through Image Processing for Cultural Heritage and Machine Learning](https://doi.org/10.18280/ts.420148).**Traitement du Signal**. 2025.(中科院四区, JCR Q4, **IF=1.2**, 第一作者)
   * [A Deep Learning-based Method of Investigating Rammed-earth Wall Damage on the Ming Great Wall Military Defense System](https://dl.acm.org/doi/10.1145/3701739). **Journal on Computing and Cultural Heritage**. 2024. (中科院三区, JCR Q3, **IF=2.1**)
   * 延庆长城砖窑发现与营建过程复原. **河北建筑工程学院学报**(在投状态: 等待责编处理). 2024. (第一作者)
   * 中国古塔数字化测绘图集·河北卷. **中国建筑工业出版社**. 2024.
