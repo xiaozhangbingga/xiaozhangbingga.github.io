@@ -11,24 +11,18 @@ jobs:
   build:
     if: github.repository == 'mmistakes/minimal-mistakes'
     runs-on: ubuntu-latest
+    container:
+      image: ruby:3.2-slim  # 使用官方Ruby Docker镜像
     steps:
     - uses: actions/checkout@v4
       with:
         fetch-depth: 0
 
-    - name: Setup Ruby
-      uses: ruby/setup-ruby@v1.170.0  # 指定最新版本号
-      with:
-        ruby-version: '3.2'
-        
-    - name: Debug Ruby info
+    - name: Install dependencies
       run: |
-        echo "Ruby location: $(which ruby)"
-        echo "Ruby version: $(ruby -v)"
-        echo "Gem location: $(which gem)"
-        echo "Gem version: $(gem -v)"
-        echo "Bundler location: $(which bundler)"
-        echo "Bundler version: $(bundler -v)"
+        apt-get update -qq
+        apt-get install -y build-essential git
+        gem install bundler
     
     - name: Setup cache for Bundler
       id: cache
