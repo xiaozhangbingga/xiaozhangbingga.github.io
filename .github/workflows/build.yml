@@ -10,7 +10,7 @@ on:
 jobs:
   build:
     if: github.repository == 'mmistakes/minimal-mistakes'
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
       with:
@@ -19,6 +19,10 @@ jobs:
     - uses: ruby/setup-ruby@v1
       with:
         ruby-version: '3.2'
+        bundler-cache: true  # 添加此选项来自动处理gem缓存
+        working-directory: 'docs'  # 指定工作目录
+        
+    # 若使用bundler-cache:true，可以移除下面的缓存步骤，但保留以确保兼容性
     - name: Setup cache for Bundler
       id: cache
       uses: actions/cache@v4
