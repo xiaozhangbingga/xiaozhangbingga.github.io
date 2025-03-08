@@ -13,6 +13,7 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-sitemap"
   gem "jekyll-paginate"
+  gem "jekyll-gist"  # 添加这行来安装jekyll-gist插件
   # 添加您使用的其他插件
 end
 
