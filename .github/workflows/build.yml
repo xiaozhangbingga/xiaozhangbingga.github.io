@@ -10,7 +10,7 @@ on:
 jobs:
   build:
     if: github.repository == 'mmistakes/minimal-mistakes'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v4
       with:
