@@ -15,16 +15,11 @@ jobs:
     - uses: actions/checkout@v4
       with:
         fetch-depth: 0
-
-    # 手动安装Ruby
-    - name: Setup Ruby manually
+    
+    # 使用系统预装的Ruby 3.2.3
+    - name: Use system Ruby
       run: |
-        sudo apt-get update
-        sudo apt-get install -y rbenv ruby-build
-        sudo mkdir -p /opt/hostedtoolcache/Ruby/3.2.3/x64
-        sudo ruby-build 3.2.3 /opt/hostedtoolcache/Ruby/3.2.3/x64
-        sudo touch /opt/hostedtoolcache/Ruby/3.2.3/x64.complete
-        echo "PATH=/opt/hostedtoolcache/Ruby/3.2.3/x64/bin:$PATH" >> $GITHUB_ENV
+        echo "Using system Ruby $(ruby --version)"
         gem install bundler
     
     - name: Setup cache for Bundler
