@@ -10,8 +10,12 @@ on:
 jobs:
   build:
     if: github.repository == 'mmistakes/minimal-mistakes'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
+    - name: Chectout
+      uses: actions/checkout@v4
+    - name: Install libmagickwand-dev
+      run: sudo apt-get install libmagickwand-dev
     - uses: actions/checkout@v4
       with:
         fetch-depth: 0
