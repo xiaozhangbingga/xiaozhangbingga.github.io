@@ -16,11 +16,15 @@ jobs:
       with:
         fetch-depth: 0
 
-    # 使用系统Ruby代替setup-ruby
-    - name: Setup system Ruby
+    # 手动安装Ruby
+    - name: Setup Ruby manually
       run: |
         sudo apt-get update
-        sudo apt-get install ruby-full build-essential zlib1g-dev
+        sudo apt-get install -y rbenv ruby-build
+        sudo mkdir -p /opt/hostedtoolcache/Ruby/3.2.3/x64
+        sudo ruby-build 3.2.3 /opt/hostedtoolcache/Ruby/3.2.3/x64
+        sudo touch /opt/hostedtoolcache/Ruby/3.2.3/x64.complete
+        echo "PATH=/opt/hostedtoolcache/Ruby/3.2.3/x64/bin:$PATH" >> $GITHUB_ENV
         gem install bundler
     
     - name: Setup cache for Bundler
