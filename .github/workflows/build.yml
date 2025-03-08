@@ -15,11 +15,22 @@ jobs:
     - uses: actions/checkout@v4
       with:
         fetch-depth: 0
-    
-    # 使用系统预装的Ruby 3.2.3
-    - name: Use system Ruby
+
+    # 使用rbenv安装Ruby
+    - name: Install Ruby with rbenv
       run: |
-        echo "Using system Ruby $(ruby --version)"
+        sudo apt-get update
+        sudo apt-get install -y git curl libssl-dev libreadline-dev zlib1g-dev autoconf bison build-essential libyaml-dev libreadline-dev libncurses5-dev libffi-dev libgdbm-dev
+        git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+        echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+        echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+        source ~/.bashrc
+        git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+        echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
+        source ~/.bashrc
+        rbenv install 3.2.3
+        rbenv global 3.2.3
+        echo "Ruby version: $(ruby -v)"
         gem install bundler
     
     - name: Setup cache for Bundler
@@ -38,13 +49,18 @@ jobs:
         MAKE: make -j2
       working-directory: docs/
       run: |
+        export PATH="$HOME/.rbenv/bin:$PATH"
+        eval "$(rbenv init -)"
         bundle config set path vendor/bundle
         bundle install --jobs=4 --retry=3
         bundle clean
 
     - name: Update Algolia index
       working-directory: docs/
-      run: bundle exec jekyll algolia push
+      run: |
+        export PATH="$HOME/.rbenv/bin:$PATH"
+        eval "$(rbenv init -)"
+        bundle exec jekyll algolia push
       env:
         ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
       continue-on-error: true
