@@ -14,13 +14,26 @@ jobs:
     steps:
     - name: Chectout code
       uses: actions/checkout@v2
+    - name: Download and install ruby-build
+        run: |
+          # 下载 ruby-build 的 tarball
+          curl -LO https://github.com/rbenv/ruby-build/releases/latest/download/ruby-build.tar.gz
+          
+          # 解压文件
+          tar -xzf ruby-build.tar.gz
+          
+          # 安装 ruby-build
+          PREFIX=/opt/hostedtoolcache ./ruby-build-*/install.sh
+          
+          # 删除 tarball 和解压目录，节省空间
+          rm -rf ruby-build-*
+          rm ruby-build.tar.gz
+
     - name: Install Ruby
-      run:
-        git clone https://github.com/rbenv/ruby-build.git /tmp/ruby-build
-        /tmp/ruby-build/install.sh
-        /tmp/ruby-build/bin/ruby-build 3.1.2 /opt/hostedtoolcache/Ruby/3.1.2/x64
-        touch /opt/hostedtoolcache/Ruby/3.1.2/x64.complete
-      shell: bash
+        run: |
+          /opt/hostedtoolcache/bin/ruby-build 3.1.2 /opt/hostedtoolcache/Ruby/3.1.2/x64
+          touch /opt/hostedtoolcache/Ruby/3.1.2/x64.complete
+        shell: bash
 
     - uses: actions/checkout@v4
       with:
